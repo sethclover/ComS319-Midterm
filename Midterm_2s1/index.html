@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Haven Travels</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./images/palm-tree.png">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <style>
+        @font-face {
+            font-family: "Bitstream Vera Serif Bold";
+            src: url("https://mdn.github.io/css-examples/web-fonts/VeraSeBd.ttf");
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        p {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .navbar-brand h1 {
+            font-family: 'Bitstream Vera Serif Bold', serif;
+            font-size: 2rem;
+        }
+
+        h1 {
+            font-family: 'Bitstream Vera Serif Bold', serif;
+            font-size: 3rem;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 30 30"%3E%3Cpath stroke="%23fff" stroke-linecap="round" stroke-width="2" d="M5 7h20M5 15h20M5 23h20" /%3E%3C/svg%3E');
+        }
+
+        .btn-bd-primary {
+            background-color: #712cf9;
+            border-color: #712cf9;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .btn-bd-primary:hover {
+            background-color: #6528e0;
+            border-color: #6528e0;
+        }
+
+        .card {
+            border: none;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            color: #6c757d;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        .text-body-secondary {
+            color: #6c757d;
+        }
+
+        .dropdown-menu {
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-item {
+            font-size: 0.9rem;
+        }
+
+        /* Center the Introduction section with background image */
+        .intro-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            min-height: 60vh;
+            background-image: url('./images/CoverPhoto.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color:  rgb(0, 0, 0); /* Ensure text is visible on the background */
+            padding: 20px;
+        }
+
+        .btn-view {
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            padding: 8px 16px;
+            text-decoration: none; /* Removes underline */
+            display: inline-block; /* Ensures button-like appearance */
+        }
+
+        .btn-view:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-dark shadow-sm">
+            <div class="container d-flex align-items-center justify-content-between">
+                <a href="./index.html" class="navbar-brand d-flex align-items-center">
+                    <h1>Home Haven Travels</h1>
+                </a>
+                <div class="d-flex align-items-center">
+                    <nav class="ms-3">
+                        <ul class="navbar-nav d-flex flex-row">
+                            <li class="nav-item">
+                                <a href="./about.html" class="nav-link text-light" style="font-size: 1.2rem;">About Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="navbar-toggler d-flex align-items-center ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                        <p class="mb-0 me-2 text-light" style=" font-family: Arial, Helvetica, sans-serif;">Destinations</p>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="collapse text-bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 py-4">
+                        <a href="./Dest1.html" style="text-decoration: none; padding: 30px; color: white; font-weight: bold;">Paris</a>
+                        <a href="./Dest2.html" style="text-decoration: none; padding: 30px; color: white; font-weight: bold;">Bali</a>
+                        <a href="./Dest3.html" style="text-decoration: none; padding: 30px; color: white; font-weight: bold;">New York City</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Centered Introduction Section with Background Image -->
+    <section class="intro-section">
+        <div class="container">
+            <h1 style="color: #10263d;">Explore your World's Most Beautiful Destinations.</h1>
+            <p style="font-size: 28px; color: #ffffff; -webkit-text-stroke: 1px #ffffff; -webkit-text-fill-color: #ffffff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+                Home Haven Travels brings you a curated selection of the world's top travel spots. Whether you're looking for adventure, relaxation, or culture, our travel guide will help you discover the perfect destination for your next journey.
+              </p>                          
+    </div>
+    </section>
+
+    <!-- Destinations Showcase -->
+    <section class="container py-5">
+        <h3 style="font-family: 'Bitstream Vera Serif Bold', serif;" class="text-center mb-5"><u>Travel Destinations</u></h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="destinations-container">
+            <!-- Destination 1 -->
+            <div class="col" id="paris">
+                <div class="card">
+                    <img src="./images/Eiffel.jpg" style="height: 625px" class="card-img-top" alt="Eiffel Tower, Paris">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Bitstream Vera Serif Bold', serif;">Paris, France</h5>
+                        <p class="card-text" id="paris-description"></p>
+                        <a href="./Dest1.html" class="btn-view">View</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Destination 2 -->
+            <div class="col" id="bali">
+                <div class="card">
+                    <img src="./images/Bali.jpg" class="card-img-top" alt="Bali Beach">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Bitstream Vera Serif Bold', serif;">Bali, Indonesia</h5>
+                        <p class="card-text" id="bali-description"></p>
+                        <a href="./Dest2.html" class="btn-view">View</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Destination 3 -->
+            <div class="col" id="newyork">
+                <div class="card">
+                    <img src="./images/NewYork.jpg" class="card-img-top" alt="New York City">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Bitstream Vera Serif Bold', serif;">New York City, USA</h5>
+                        <p class="card-text" id="newyork-description"></p>
+                        <a href="./Dest3.html" class="btn-view">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-body-secondary py-4">
+        <div class="container">
+            <p>&copy; 2024 Home Haven Travels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="index.js"></script>
+</body>
+</html>
